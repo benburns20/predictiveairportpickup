@@ -1,5 +1,5 @@
 # Predictive Airport Pickup App by Bennett Burns
-## For: CS 4365/6365 Spring 2022 - Final Deliverables
+## CS 4365/6365 Spring 2022 - Final Deliverables
 
 ### Description:
 
