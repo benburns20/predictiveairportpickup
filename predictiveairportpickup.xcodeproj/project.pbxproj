@@ -7,18 +7,95 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A7F81B95FDCA9B15AB169D /* AirportTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A720131C84C0863235DD93A /* AirportTime.swift */; };
+		032C1AD2A7DA14E7F8BDD49A /* AirportTime+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD453F981671AE7EE656DE4E /* AirportTime+Schema.swift */; };
+		3BA81982C761CDDC34FF19E0 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 29445EC202CF5A48106814EC /* awsconfiguration.json */; };
+		85403BAD280D18B100B39432 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85403BAC280D18B100B39432 /* TutorialView.swift */; };
+		854A97E228061210001832B0 /* AirlinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A97E128061210001832B0 /* AirlinesModel.swift */; };
+		854A97EC28066E24001832B0 /* ByAirportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A97EB28066E24001832B0 /* ByAirportView.swift */; };
+		854A97EE28066E63001832B0 /* ByFlightCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A97ED28066E63001832B0 /* ByFlightCodeView.swift */; };
+		854A97F028067E5F001832B0 /* FlightInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A97EF28067E5F001832B0 /* FlightInfoView.swift */; };
+		854A97F2280691B9001832B0 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A97F1280691B9001832B0 /* CustomSegmentedControl.swift */; };
+		8561532F2808B17B00AE8576 /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8561532E2808B17B00AE8576 /* SearchResultsView.swift */; };
+		856153312808B24A00AE8576 /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856153302808B24A00AE8576 /* Flights.swift */; };
+		856153342808CA5100AE8576 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 856153332808CA5100AE8576 /* OrderedCollections */; };
+		857429A6280B3CE30066A40F /* AirportTimeBaggageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857429A5280B3CE30066A40F /* AirportTimeBaggageModel.swift */; };
 		85AD46E627F39E140098137F /* predictiveairportpickupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AD46E527F39E140098137F /* predictiveairportpickupApp.swift */; };
-		85AD46E827F39E140098137F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AD46E727F39E140098137F /* ContentView.swift */; };
+		85AD46E827F39E140098137F /* MainSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AD46E727F39E140098137F /* MainSearchView.swift */; };
 		85AD46EA27F39E180098137F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85AD46E927F39E180098137F /* Assets.xcassets */; };
 		85AD46ED27F39E180098137F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85AD46EC27F39E180098137F /* Preview Assets.xcassets */; };
+		85AD46F527F39F1B0098137F /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 85AD46F427F39F1B0098137F /* AWSAPIPlugin */; };
+		85AD46F727F39F1B0098137F /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 85AD46F627F39F1B0098137F /* AWSCognitoAuthPlugin */; };
+		85AD46F927F39F1B0098137F /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 85AD46F827F39F1B0098137F /* AWSDataStorePlugin */; };
+		85AD46FB27F39F1B0098137F /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 85AD46FA27F39F1B0098137F /* AWSPluginsCore */; };
+		85AD46FD27F39F1B0098137F /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 85AD46FC27F39F1B0098137F /* Amplify */; };
+		85AD470B27F39FDE0098137F /* project-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 85AD470027F39FDE0098137F /* project-config.json */; };
+		85AD470C27F39FDE0098137F /* cli.json in Resources */ = {isa = PBXBuildFile; fileRef = 85AD470127F39FDE0098137F /* cli.json */; };
+		85AD470D27F39FDE0098137F /* backend-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 85AD470327F39FDE0098137F /* backend-config.json */; };
+		85AD470E27F39FDE0098137F /* CustomResources.json in Resources */ = {isa = PBXBuildFile; fileRef = 85AD470727F39FDE0098137F /* CustomResources.json */; };
+		85AD470F27F39FDE0098137F /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 85AD470827F39FDE0098137F /* parameters.json */; };
+		85AD471027F39FDE0098137F /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 85AD470927F39FDE0098137F /* schema.graphql */; };
+		85AD471127F39FDE0098137F /* transform.conf.json in Resources */ = {isa = PBXBuildFile; fileRef = 85AD470A27F39FDE0098137F /* transform.conf.json */; };
+		85C6EF1027F3FB0A0001356D /* FlightResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6EF0F27F3FB0A0001356D /* FlightResultView.swift */; };
+		85C6EF1227F3FC010001356D /* AirportTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6EF1127F3FC010001356D /* AirportTimeModel.swift */; };
+		85C6EF1427F3FE660001356D /* SearchFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6EF1327F3FE650001356D /* SearchFlightView.swift */; };
+		85C6EF1627F400880001356D /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6EF1527F400880001356D /* Flight.swift */; };
+		85C6EF1827F644A90001356D /* PickUpTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6EF1727F644A90001356D /* PickUpTimeView.swift */; };
+		85C6EF1A27F646BC0001356D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6EF1927F646BC0001356D /* MainView.swift */; };
+		85C6EF1C27F647320001356D /* PreviousFlightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6EF1B27F647320001356D /* PreviousFlightsView.swift */; };
+		85C6EF1E27FBA02C0001356D /* FlightCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6EF1D27FBA02C0001356D /* FlightCardView.swift */; };
+		85C6EF2027FCCF920001356D /* FlightWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6EF1F27FCCF920001356D /* FlightWrapper.swift */; };
+		85F0361B27FE0B3F00624F1A /* FlightDataJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0361A27FE0B3F00624F1A /* FlightDataJSON.swift */; };
+		85F0362027FE2F1000624F1A /* AirportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0361F27FE2F1000624F1A /* AirportsModel.swift */; };
+		85F036222800BD0600624F1A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F036212800BD0600624F1A /* LocationManager.swift */; };
+		8C4A4F251642C798ABECDF91 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 0518F9F72CA32D97D9328543 /* amplifyconfiguration.json */; };
+		BCFF1FF5DDB2BCF36273E2A7 /* AirportTimeBaggage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913F2D72020F56A3A936D81 /* AirportTimeBaggage.swift */; };
+		EEECCE13C0CFB5290410FE16 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BED0280AE3E63F862B0CBE /* AmplifyModels.swift */; };
+		F2AF203DE333E95F3108914B /* AirportTimeBaggage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = C865E02693DFF081EC2BCF8B /* AirportTimeBaggage+Schema.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0518F9F72CA32D97D9328543 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		29445EC202CF5A48106814EC /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		5A720131C84C0863235DD93A /* AirportTime.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AirportTime.swift; path = amplify/generated/models/AirportTime.swift; sourceTree = "<group>"; };
+		85403BAC280D18B100B39432 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		854A97E128061210001832B0 /* AirlinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesModel.swift; sourceTree = "<group>"; };
+		854A97EB28066E24001832B0 /* ByAirportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByAirportView.swift; sourceTree = "<group>"; };
+		854A97ED28066E63001832B0 /* ByFlightCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByFlightCodeView.swift; sourceTree = "<group>"; };
+		854A97EF28067E5F001832B0 /* FlightInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoView.swift; sourceTree = "<group>"; };
+		854A97F1280691B9001832B0 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		8561532E2808B17B00AE8576 /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
+		856153302808B24A00AE8576 /* Flights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flights.swift; sourceTree = "<group>"; };
+		857429A5280B3CE30066A40F /* AirportTimeBaggageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportTimeBaggageModel.swift; sourceTree = "<group>"; };
 		85AD46E227F39E140098137F /* predictiveairportpickup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = predictiveairportpickup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AD46E527F39E140098137F /* predictiveairportpickupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = predictiveairportpickupApp.swift; sourceTree = "<group>"; };
-		85AD46E727F39E140098137F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		85AD46E727F39E140098137F /* MainSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchView.swift; sourceTree = "<group>"; };
 		85AD46E927F39E180098137F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85AD46EC27F39E180098137F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		85AD470027F39FDE0098137F /* project-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "project-config.json"; sourceTree = "<group>"; };
+		85AD470127F39FDE0098137F /* cli.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cli.json; sourceTree = "<group>"; };
+		85AD470327F39FDE0098137F /* backend-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "backend-config.json"; sourceTree = "<group>"; };
+		85AD470727F39FDE0098137F /* CustomResources.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CustomResources.json; sourceTree = "<group>"; };
+		85AD470827F39FDE0098137F /* parameters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		85AD470927F39FDE0098137F /* schema.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphql; sourceTree = "<group>"; };
+		85AD470A27F39FDE0098137F /* transform.conf.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transform.conf.json; sourceTree = "<group>"; };
+		85C6EF0F27F3FB0A0001356D /* FlightResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightResultView.swift; sourceTree = "<group>"; };
+		85C6EF1127F3FC010001356D /* AirportTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportTimeModel.swift; sourceTree = "<group>"; };
+		85C6EF1327F3FE650001356D /* SearchFlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightView.swift; sourceTree = "<group>"; };
+		85C6EF1527F400880001356D /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		85C6EF1727F644A90001356D /* PickUpTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpTimeView.swift; sourceTree = "<group>"; };
+		85C6EF1927F646BC0001356D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		85C6EF1B27F647320001356D /* PreviousFlightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousFlightsView.swift; sourceTree = "<group>"; };
+		85C6EF1D27FBA02C0001356D /* FlightCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCardView.swift; sourceTree = "<group>"; };
+		85C6EF1F27FCCF920001356D /* FlightWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightWrapper.swift; sourceTree = "<group>"; };
+		85C6EF2127FCF09E0001356D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		85F0361A27FE0B3F00624F1A /* FlightDataJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDataJSON.swift; sourceTree = "<group>"; };
+		85F0361F27FE2F1000624F1A /* AirportsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsModel.swift; sourceTree = "<group>"; };
+		85F036212800BD0600624F1A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9913F2D72020F56A3A936D81 /* AirportTimeBaggage.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AirportTimeBaggage.swift; path = amplify/generated/models/AirportTimeBaggage.swift; sourceTree = "<group>"; };
+		B1BED0280AE3E63F862B0CBE /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		C865E02693DFF081EC2BCF8B /* AirportTimeBaggage+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "AirportTimeBaggage+Schema.swift"; path = "amplify/generated/models/AirportTimeBaggage+Schema.swift"; sourceTree = "<group>"; };
+		FD453F981671AE7EE656DE4E /* AirportTime+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "AirportTime+Schema.swift"; path = "amplify/generated/models/AirportTime+Schema.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +103,111 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85AD46FB27F39F1B0098137F /* AWSPluginsCore in Frameworks */,
+				85AD46FD27F39F1B0098137F /* Amplify in Frameworks */,
+				856153342808CA5100AE8576 /* OrderedCollections in Frameworks */,
+				85AD46F927F39F1B0098137F /* AWSDataStorePlugin in Frameworks */,
+				85AD46F527F39F1B0098137F /* AWSAPIPlugin in Frameworks */,
+				85AD46F727F39F1B0098137F /* AWSCognitoAuthPlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32A12D0C951F37C3A527E3FE /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				FD453F981671AE7EE656DE4E /* AirportTime+Schema.swift */,
+				5A720131C84C0863235DD93A /* AirportTime.swift */,
+				B1BED0280AE3E63F862B0CBE /* AmplifyModels.swift */,
+				C865E02693DFF081EC2BCF8B /* AirportTimeBaggage+Schema.swift */,
+				9913F2D72020F56A3A936D81 /* AirportTimeBaggage.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
+		854A97E328066D5E001832B0 /* MainSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				85AD46E727F39E140098137F /* MainSearchView.swift */,
+			);
+			path = MainSearchView;
+			sourceTree = "<group>";
+		};
+		854A97E428066D71001832B0 /* FlightResultView */ = {
+			isa = PBXGroup;
+			children = (
+				85C6EF0F27F3FB0A0001356D /* FlightResultView.swift */,
+				854A97EF28067E5F001832B0 /* FlightInfoView.swift */,
+			);
+			path = FlightResultView;
+			sourceTree = "<group>";
+		};
+		854A97E528066D7C001832B0 /* SearchFlightView */ = {
+			isa = PBXGroup;
+			children = (
+				85C6EF1327F3FE650001356D /* SearchFlightView.swift */,
+				854A97EB28066E24001832B0 /* ByAirportView.swift */,
+				854A97ED28066E63001832B0 /* ByFlightCodeView.swift */,
+				8561532E2808B17B00AE8576 /* SearchResultsView.swift */,
+			);
+			path = SearchFlightView;
+			sourceTree = "<group>";
+		};
+		854A97E628066D88001832B0 /* PickUpTimeView */ = {
+			isa = PBXGroup;
+			children = (
+				85C6EF1727F644A90001356D /* PickUpTimeView.swift */,
+			);
+			path = PickUpTimeView;
+			sourceTree = "<group>";
+		};
+		854A97E728066D93001832B0 /* PreviousFlightsView */ = {
+			isa = PBXGroup;
+			children = (
+				85C6EF1B27F647320001356D /* PreviousFlightsView.swift */,
+			);
+			path = PreviousFlightsView;
+			sourceTree = "<group>";
+		};
+		854A97E828066D9D001832B0 /* MainVIew */ = {
+			isa = PBXGroup;
+			children = (
+				85C6EF1927F646BC0001356D /* MainView.swift */,
+			);
+			path = MainVIew;
+			sourceTree = "<group>";
+		};
+		854A97E928066DA4001832B0 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				85C6EF1D27FBA02C0001356D /* FlightCardView.swift */,
+				854A97F1280691B9001832B0 /* CustomSegmentedControl.swift */,
+				85403BAC280D18B100B39432 /* TutorialView.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		854A97EA28066DD1001832B0 /* FlightModel */ = {
+			isa = PBXGroup;
+			children = (
+				85C6EF1527F400880001356D /* Flight.swift */,
+				85C6EF1F27FCCF920001356D /* FlightWrapper.swift */,
+				85F0361A27FE0B3F00624F1A /* FlightDataJSON.swift */,
+				856153302808B24A00AE8576 /* Flights.swift */,
+			);
+			path = FlightModel;
+			sourceTree = "<group>";
+		};
 		85AD46D927F39E140098137F = {
 			isa = PBXGroup;
 			children = (
+				85AD46FE27F39FDE0098137F /* amplify */,
 				85AD46E427F39E140098137F /* predictiveairportpickup */,
 				85AD46E327F39E140098137F /* Products */,
+				8788C49902FEFDAE627380E9 /* AmplifyConfig */,
+				32A12D0C951F37C3A527E3FE /* AmplifyModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +222,10 @@
 		85AD46E427F39E140098137F /* predictiveairportpickup */ = {
 			isa = PBXGroup;
 			children = (
+				85C6EF2127FCF09E0001356D /* Info.plist */,
+				85C6EF0E27F3FA930001356D /* Models */,
+				85C6EF0A27F3F5A00001356D /* Views */,
 				85AD46E527F39E140098137F /* predictiveairportpickupApp.swift */,
-				85AD46E727F39E140098137F /* ContentView.swift */,
 				85AD46E927F39E180098137F /* Assets.xcassets */,
 				85AD46EB27F39E180098137F /* Preview Content */,
 			);
@@ -65,6 +238,96 @@
 				85AD46EC27F39E180098137F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85AD46FE27F39FDE0098137F /* amplify */ = {
+			isa = PBXGroup;
+			children = (
+				85AD46FF27F39FDE0098137F /* .config */,
+				85AD470127F39FDE0098137F /* cli.json */,
+				85AD470227F39FDE0098137F /* backend */,
+			);
+			path = amplify;
+			sourceTree = "<group>";
+		};
+		85AD46FF27F39FDE0098137F /* .config */ = {
+			isa = PBXGroup;
+			children = (
+				85AD470027F39FDE0098137F /* project-config.json */,
+			);
+			path = .config;
+			sourceTree = "<group>";
+		};
+		85AD470227F39FDE0098137F /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				85AD470327F39FDE0098137F /* backend-config.json */,
+				85AD470427F39FDE0098137F /* api */,
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+		85AD470427F39FDE0098137F /* api */ = {
+			isa = PBXGroup;
+			children = (
+				85AD470527F39FDE0098137F /* amplifyDatasource */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		85AD470527F39FDE0098137F /* amplifyDatasource */ = {
+			isa = PBXGroup;
+			children = (
+				85AD470627F39FDE0098137F /* stacks */,
+				85AD470827F39FDE0098137F /* parameters.json */,
+				85AD470927F39FDE0098137F /* schema.graphql */,
+				85AD470A27F39FDE0098137F /* transform.conf.json */,
+			);
+			path = amplifyDatasource;
+			sourceTree = "<group>";
+		};
+		85AD470627F39FDE0098137F /* stacks */ = {
+			isa = PBXGroup;
+			children = (
+				85AD470727F39FDE0098137F /* CustomResources.json */,
+			);
+			path = stacks;
+			sourceTree = "<group>";
+		};
+		85C6EF0A27F3F5A00001356D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				854A97E928066DA4001832B0 /* Widgets */,
+				854A97E828066D9D001832B0 /* MainVIew */,
+				854A97E728066D93001832B0 /* PreviousFlightsView */,
+				854A97E628066D88001832B0 /* PickUpTimeView */,
+				854A97E528066D7C001832B0 /* SearchFlightView */,
+				854A97E428066D71001832B0 /* FlightResultView */,
+				854A97E328066D5E001832B0 /* MainSearchView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85C6EF0E27F3FA930001356D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				854A97EA28066DD1001832B0 /* FlightModel */,
+				85C6EF1127F3FC010001356D /* AirportTimeModel.swift */,
+				857429A5280B3CE30066A40F /* AirportTimeBaggageModel.swift */,
+				85F0361F27FE2F1000624F1A /* AirportsModel.swift */,
+				85F036212800BD0600624F1A /* LocationManager.swift */,
+				854A97E128061210001832B0 /* AirlinesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8788C49902FEFDAE627380E9 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				29445EC202CF5A48106814EC /* awsconfiguration.json */,
+				0518F9F72CA32D97D9328543 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +346,14 @@
 			dependencies = (
 			);
 			name = predictiveairportpickup;
+			packageProductDependencies = (
+				85AD46F427F39F1B0098137F /* AWSAPIPlugin */,
+				85AD46F627F39F1B0098137F /* AWSCognitoAuthPlugin */,
+				85AD46F827F39F1B0098137F /* AWSDataStorePlugin */,
+				85AD46FA27F39F1B0098137F /* AWSPluginsCore */,
+				85AD46FC27F39F1B0098137F /* Amplify */,
+				856153332808CA5100AE8576 /* OrderedCollections */,
+			);
 			productName = predictiveairportpickup;
 			productReference = 85AD46E227F39E140098137F /* predictiveairportpickup.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +382,10 @@
 				Base,
 			);
 			mainGroup = 85AD46D927F39E140098137F;
+			packageReferences = (
+				85AD46F327F39F1B0098137F /* XCRemoteSwiftPackageReference "amplify-ios" */,
+				856153322808CA5100AE8576 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 85AD46E327F39E140098137F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +402,15 @@
 			files = (
 				85AD46ED27F39E180098137F /* Preview Assets.xcassets in Resources */,
 				85AD46EA27F39E180098137F /* Assets.xcassets in Resources */,
+				85AD470E27F39FDE0098137F /* CustomResources.json in Resources */,
+				85AD470C27F39FDE0098137F /* cli.json in Resources */,
+				85AD471127F39FDE0098137F /* transform.conf.json in Resources */,
+				85AD470B27F39FDE0098137F /* project-config.json in Resources */,
+				3BA81982C761CDDC34FF19E0 /* awsconfiguration.json in Resources */,
+				85AD470F27F39FDE0098137F /* parameters.json in Resources */,
+				85AD470D27F39FDE0098137F /* backend-config.json in Resources */,
+				85AD471027F39FDE0098137F /* schema.graphql in Resources */,
+				8C4A4F251642C798ABECDF91 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +421,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85AD46E827F39E140098137F /* ContentView.swift in Sources */,
+				85403BAD280D18B100B39432 /* TutorialView.swift in Sources */,
+				85C6EF1627F400880001356D /* Flight.swift in Sources */,
+				85F036222800BD0600624F1A /* LocationManager.swift in Sources */,
+				854A97E228061210001832B0 /* AirlinesModel.swift in Sources */,
+				85C6EF1C27F647320001356D /* PreviousFlightsView.swift in Sources */,
+				85AD46E827F39E140098137F /* MainSearchView.swift in Sources */,
+				85F0362027FE2F1000624F1A /* AirportsModel.swift in Sources */,
 				85AD46E627F39E140098137F /* predictiveairportpickupApp.swift in Sources */,
+				854A97F2280691B9001832B0 /* CustomSegmentedControl.swift in Sources */,
+				032C1AD2A7DA14E7F8BDD49A /* AirportTime+Schema.swift in Sources */,
+				01A7F81B95FDCA9B15AB169D /* AirportTime.swift in Sources */,
+				85C6EF1827F644A90001356D /* PickUpTimeView.swift in Sources */,
+				85C6EF1427F3FE660001356D /* SearchFlightView.swift in Sources */,
+				85F0361B27FE0B3F00624F1A /* FlightDataJSON.swift in Sources */,
+				8561532F2808B17B00AE8576 /* SearchResultsView.swift in Sources */,
+				854A97EC28066E24001832B0 /* ByAirportView.swift in Sources */,
+				85C6EF1A27F646BC0001356D /* MainView.swift in Sources */,
+				EEECCE13C0CFB5290410FE16 /* AmplifyModels.swift in Sources */,
+				856153312808B24A00AE8576 /* Flights.swift in Sources */,
+				85C6EF1227F3FC010001356D /* AirportTimeModel.swift in Sources */,
+				854A97F028067E5F001832B0 /* FlightInfoView.swift in Sources */,
+				854A97EE28066E63001832B0 /* ByFlightCodeView.swift in Sources */,
+				85C6EF1027F3FB0A0001356D /* FlightResultView.swift in Sources */,
+				857429A6280B3CE30066A40F /* AirportTimeBaggageModel.swift in Sources */,
+				85C6EF1E27FBA02C0001356D /* FlightCardView.swift in Sources */,
+				85C6EF2027FCCF920001356D /* FlightWrapper.swift in Sources */,
+				F2AF203DE333E95F3108914B /* AirportTimeBaggage+Schema.swift in Sources */,
+				BCFF1FF5DDB2BCF36273E2A7 /* AirportTimeBaggage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +580,8 @@
 				DEVELOPMENT_TEAM = 2GSGYX2LYR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = predictiveairportpickup/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to location for directions to airport terminal?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +611,8 @@
 				DEVELOPMENT_TEAM = 2GSGYX2LYR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = predictiveairportpickup/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to location for directions to airport terminal?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +653,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		856153322808CA5100AE8576 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		85AD46F327F39F1B0098137F /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		856153332808CA5100AE8576 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 856153322808CA5100AE8576 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		85AD46F427F39F1B0098137F /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85AD46F327F39F1B0098137F /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		85AD46F627F39F1B0098137F /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85AD46F327F39F1B0098137F /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		85AD46F827F39F1B0098137F /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85AD46F327F39F1B0098137F /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSDataStorePlugin;
+		};
+		85AD46FA27F39F1B0098137F /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85AD46F327F39F1B0098137F /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSPluginsCore;
+		};
+		85AD46FC27F39F1B0098137F /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85AD46F327F39F1B0098137F /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85AD46DA27F39E140098137F /* Project object */;
 }
