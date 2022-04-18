@@ -30,7 +30,7 @@ struct TutorialView: View {
                     .font(.system(size: 20, weight: .regular))
                     .padding([.leading, .trailing, .bottom])
                 
-                Text("The following screen will show the **Flight** info, as well as a button to **Track the Current Flight**.")
+                Text("The following screen will show the **Flight** info, as well as a button to **Track the Current Flight**")
                     .font(.system(size: 20, weight: .regular))
                     .padding([.leading, .trailing, .bottom])
                 

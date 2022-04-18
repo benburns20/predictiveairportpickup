@@ -200,6 +200,40 @@
 			path = FlightModel;
 			sourceTree = "<group>";
 		};
+		859FABF7280E10AD0070B2ED /* TimeModels */ = {
+			isa = PBXGroup;
+			children = (
+				85C6EF1127F3FC010001356D /* AirportTimeModel.swift */,
+				857429A5280B3CE30066A40F /* AirportTimeBaggageModel.swift */,
+			);
+			path = TimeModels;
+			sourceTree = "<group>";
+		};
+		859FABF8280E10CA0070B2ED /* AirportAndAirlineData */ = {
+			isa = PBXGroup;
+			children = (
+				85F0361F27FE2F1000624F1A /* AirportsModel.swift */,
+				854A97E128061210001832B0 /* AirlinesModel.swift */,
+			);
+			path = AirportAndAirlineData;
+			sourceTree = "<group>";
+		};
+		859FABF9280E10E50070B2ED /* LocationModel */ = {
+			isa = PBXGroup;
+			children = (
+				85F036212800BD0600624F1A /* LocationManager.swift */,
+			);
+			path = LocationModel;
+			sourceTree = "<group>";
+		};
+		859FABFA280E10FA0070B2ED /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				85AD46E527F39E140098137F /* predictiveairportpickupApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		85AD46D927F39E140098137F = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +259,7 @@
 				85C6EF2127FCF09E0001356D /* Info.plist */,
 				85C6EF0E27F3FA930001356D /* Models */,
 				85C6EF0A27F3F5A00001356D /* Views */,
-				85AD46E527F39E140098137F /* predictiveairportpickupApp.swift */,
+				859FABFA280E10FA0070B2ED /* Main */,
 				85AD46E927F39E180098137F /* Assets.xcassets */,
 				85AD46EB27F39E180098137F /* Preview Content */,
 			);
@@ -312,11 +346,9 @@
 			isa = PBXGroup;
 			children = (
 				854A97EA28066DD1001832B0 /* FlightModel */,
-				85C6EF1127F3FC010001356D /* AirportTimeModel.swift */,
-				857429A5280B3CE30066A40F /* AirportTimeBaggageModel.swift */,
-				85F0361F27FE2F1000624F1A /* AirportsModel.swift */,
-				85F036212800BD0600624F1A /* LocationManager.swift */,
-				854A97E128061210001832B0 /* AirlinesModel.swift */,
+				859FABF7280E10AD0070B2ED /* TimeModels */,
+				859FABF8280E10CA0070B2ED /* AirportAndAirlineData */,
+				859FABF9280E10E50070B2ED /* LocationModel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
