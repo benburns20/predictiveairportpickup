@@ -12,19 +12,20 @@ struct MainView: View {
     static var pickUpTime: Date? = nil
     
     var body: some View {
-        TabView {
-            MainSearchView()
-                .tabItem {
-                    Image(systemName: "airplane")
-                    Text("Current Flights")
-                }
-            
-            PreviousFlightsView()
-                .tabItem {
-                    Image(systemName: "book.fill")
-                    Text("Previous Flights")
-                }
-        }
+//        TabView {
+//            MainSearchView()
+//                .tabItem {
+//                    Image(systemName: "airplane")
+//                    Text("Current Flights")
+//                }
+//
+//            PreviousFlightsView()
+//                .tabItem {
+//                    Image(systemName: "book.fill")
+//                    Text("Previous Flights")
+//                }
+//        }
+        MainSearchView()
     }
 }
 

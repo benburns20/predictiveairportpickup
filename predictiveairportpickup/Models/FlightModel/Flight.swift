@@ -78,7 +78,7 @@ class API: ObservableObject {
             let request = URLRequest(url: url.url!)
         
             let (data, response) = try await URLSession.shared.data(for: request)
-            guard (response as? HTTPURLResponse)?.statusCode == 200 else {fatalError("Error while fetching data")}
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else {throw DecodeError.notdecoded}
 //            print(try JSONSerialization.jsonObject(with: data))
             let flights = try JSONDecoder().decode(FlightDataJSON.self, from: data)
             print("Searching...")
@@ -109,5 +109,9 @@ class API: ObservableObject {
 //            let responseObject = (try? JSONSerialization.jsonObject(with: data)) as? [String: Any]
 //            completion(responseObject, nil)
     }
+}
+
+enum DecodeError: Error {
+    case notdecoded
 }
 

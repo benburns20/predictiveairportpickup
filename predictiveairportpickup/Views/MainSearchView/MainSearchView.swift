@@ -36,7 +36,8 @@ struct MainSearchView: View {
                     Text("Predictive Airport Pickup")
                         .font(.system(size: 52, weight: .heavy))
                         .multilineTextAlignment(.center)
-                        .padding([.bottom], 50)
+                        .padding([.bottom], 30)
+                        .fixedSize(horizontal: false, vertical: true)
                     
                     //Begin Your Search:
                     Text("Begin Your Search:").font(.system(size: 30, weight: .regular)).multilineTextAlignment(.center)
@@ -84,13 +85,13 @@ struct MainSearchView: View {
                                 Button("") {
                                     
                                 }
-                                    .frame(width: UIScreen.main.bounds.size.width - 90, height: 110)
+                                    .frame(width: UIScreen.main.bounds.size.width - 75, height: 110)
                                     .foregroundColor(.gray)
                                     .background(Color("Gray"))
                                     .cornerRadius(20)
                                 
                                 FlightCardView(flight: predictiveairportpickup.MainView.tracked_flight.flight!)
-                                    .frame(width: UIScreen.main.bounds.size.width - 90)
+                                    .frame(width: UIScreen.main.bounds.size.width - 75)
                             }
                         }
                         .buttonStyle(PlainButtonStyle())
@@ -115,8 +116,15 @@ struct MainSearchView: View {
                         }
                         
                     } else {
-                        VStack {}
-                            .frame(height: 178)
+                        Button(action: {
+                            showingTutorial.toggle()
+                        }){
+                            Text("Help?")
+                        }
+                        .padding()
+                        .sheet(isPresented: $showingTutorial) {
+                            TutorialView(showingTutorial: $showingTutorial)
+                        }
                     }
     //                NavigationLink(destination: FlightResultView()) {
     //                    Text("Flight List")
@@ -128,15 +136,6 @@ struct MainSearchView: View {
 //                    }){
 //                        Text("Print Airport Times")
 //                    }
-                    
-                    Button(action: {
-                        showingTutorial.toggle()
-                    }){
-                        Text("Help?")
-                    }
-                    .sheet(isPresented: $showingTutorial) {
-                        TutorialView(showingTutorial: $showingTutorial)
-                    }
                 }
             }
             .navigationTitle("")

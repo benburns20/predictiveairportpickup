@@ -613,6 +613,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = predictiveairportpickup/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Predictive Airport Pickup";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to location for directions to airport terminal?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -644,6 +645,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = predictiveairportpickup/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Predictive Airport Pickup";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow access to location for directions to airport terminal?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
