@@ -152,12 +152,12 @@ func getFlightsByCodeAPICall(date: Date, airline_code: String, flight_code: Stri
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
-//        let flight_date = formatter.string(from: date)
+        let flight_date = formatter.string(from: Date())
         
         let params: OrderedDictionary = [
             "access_key": "97c4f8a74c662b3f5dd391529c31ec67",
-            "limit": "10",
-//            "flight_date": flight_date,
+//            "limit": "10",
+            "flight_date": flight_date,
             "airline_iata": airline_code,
             "flight_number": flight_code
         ]
