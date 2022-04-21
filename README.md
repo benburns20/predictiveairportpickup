@@ -17,6 +17,10 @@ Note: It is important to highlight that the current iteration
   * **aviationstack** - for flight tracking - https://aviationstack.com
   * **AWS Amplify** - for storage of predictive times (backend) - https://aws.amazon.com/amplify/
 
+### To Run:
+  * It is currently necessary to open the project in Xcode and Run the application through the Simulator or on an iPhone directly
+  * *Note: This unfortunately limits the running of the app to those with Macs.*
+
 ### Detailed Instructions:
   1. Start by searching for a flight via the **Flight Search** button
   2. From the Search screen, you can choose to search for flight by the **Departure** airport (i.e. LAX) or by the **Flight Code** (i.e. DL 2121)
